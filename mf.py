@@ -68,7 +68,7 @@ def mf(trdata, vdata, tdata, K, lr, reg, epoch):
 		shuffle(trdata);
 		for d in trdata:
 			train(d[0], d[1], d[2])
-
+				
 		#mae_val = mae(vdata, predict)
 		#mae_test = mae(tdata, predict)
 
@@ -101,7 +101,7 @@ if __name__ == "__main__":
 	print len(data)
 	print len(trdata), len(vdata), len(testdata)
 
-	mf(trdata, vdata, testdata, K=5, lr=0.01, reg=0.01, epoch=50)
+	mf(trdata, vdata, testdata, K=5, lr=0.01, reg=0.001, epoch=50)
 
 
 
